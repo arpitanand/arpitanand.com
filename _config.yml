@@ -1,0 +1,78 @@
+
+# Site settings
+
+url: "http://arpitanand.com"
+baseurl: ""
+
+# Forces https everywhere in your website, except when you serve it locally
+
+force-https: True
+
+#############
+# HTML Head #
+#############
+
+author: "Arpit Anand"
+lang: "en"
+title: "} Arpit Anand {"
+
+################
+# Intro layout #
+################
+
+background-img: "../img/intro-bg.png"
+me-img: "/img/androidify.png"
+
+##############################
+# Dynamic Text on the header #
+##############################
+
+dynamic-typing: True
+shuffle: True	# Shuffle the lines.
+loop: True
+loop-count:	False # Set False for infinite loop, or set any number for finite loop.
+type-speed:	10		# Default 10
+start-delay: 200	# Default 200
+delete-delay: 5000	# Default 5000
+lines:			# You can add HTML Tags in the Text
+  - text: "Hey there!"
+  - text: "Can I help you with something?"
+
+##################
+# Contact layout #
+##################
+
+email: "arpitanand0310@gmail.com"
+
+##################
+# Social Buttons #
+##################
+
+social:
+  - title: "github"
+    url: "https://github.com/arpitanand"
+  - title: "twitter"
+    url: "https://twitter.com/arpitanand0310"
+  - title: "facebook"
+    url: "https://facebook.com/arpitanand0310"
+
+################################################################################
+
+# Tread carefully if you want to change the variables below this point!
+
+# Navigation bar links
+# Blog link in the blog and post pages will point to the blog.html#blog
+# In the default page it will point to the preview of the last post
+
+pages_list:
+  About: 'about'
+  Contact: 'contact'
+
+# Enable minification SASS
+sass:
+  style: compressed
+
+# Exclusion list from the generated _site
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor"]
+
+gems: [jekyll-paginate]
